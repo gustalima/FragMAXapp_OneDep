@@ -705,10 +705,10 @@ def create_group_description(protein, library, group_dep_id):
     group_description = f"""# 
 _pdbx_deposit_group.group_id            {group_dep_id} 
 _pdbx_deposit_group.group_description 
-;PanDDA analysis of Xtal Frag Screen vs. {protein}, including auto-refined models with ligands placed according to PanDDA-map and automatically refined models necessary to reproduce ground state model 
+;PanDDA analysis of {library_full_name} vs. {protein}, including auto-refined models with ligands placed according to PanDDA-map and automatically refined models necessary to reproduce ground state model 
 ; 
 _pdbx_deposit_group.group_title 
-'PanDDA analysis of Xtal Frag Screen vs. {protein}' 
+'PanDDA analysis of {library_full_name} vs. {protein}' 
 _pdbx_deposit_group.group_type          undefined """
 
     return group_description
